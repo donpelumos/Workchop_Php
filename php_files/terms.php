@@ -238,6 +238,153 @@
 
 					</font>
 				</div>
+				<br>
+				<p class="medium-font">Privacy Notice</p>
+				<div class="terms-div">
+					<font class="small-font">
+					
+							These Terms of Service apply to all users of the Workchop Service. Information provided by our users through the Workchop Service 
+							may contain links to third party websites that are not owned or controlled by Workchop. Workchop has no control over, and assumes 
+							no responsibility for, the content, privacy policies, or practices of any third party websites. In addition, Workchop will not and 
+							cannot censor or edit the content of any third-party site. By using the Service, you expressly acknowledge and agree that Workchop 
+							shall not be responsible for any damages, claims or other liability arising from or related to your use of any third-party website.
+							Workchop Inc. ("Workchop") recognizes that its customers, visitors and users, want to know what's up with privacy. Workchop provides 
+							this Privacy Policy to help you make an informed decision about whether to use or continue using the Workchop Site, Workchop Software 
+							and/or the Workchop Service. If you do not agree to our practices, please do not use the Workchop Site, Workchop Software,or Workchop 
+							Service.<br><br>
+							
+							This Privacy Policy is incorporated into and is subject to the Workchop Terms of Service. Your use of the Workchop Site, Workchop 
+							Software and the Workchop Service and any personal information you provide on the Workchop Site or Workchop Service remains subject 
+							to the terms of this Privacy Policy and our Terms of Service.<br><br>
+							
+							Please note that any Review Submissions or other content posted at the direction or discretion of users of the Workchop Service 
+							becomes published content and is not considered personally identifiable information subject to this Privacy Policy.<br><br>
+							
+							What Does This Privacy Policy Cover?
+							This Privacy Policy is part of Workchop’s Terms of Service and covers the treatment of user information, including personally 
+							identifying information, obtained by Workchop, including information obtained when you access the Workchop’s Site, use the Workchop 
+							Service or any other software provided by Workchop.
+							This Privacy Policy does not apply to the practices of companies that Workchop does not own or control, or to individuals whom Workchop 
+							does not employ or manage, including any of the third parties to which Workchop may disclose user information as set forth in this 
+							Privacy Policy.<br><br>
+							
+			<br><br><b>		The Information Workchop Collects</b><br>
+							Workchop may obtain the following types of information from or concerning you or your mobile phone device, which may include information 
+							that can be used to identify you as specified below (“Personally Identifying Information”):
+							
+			<br><br><b>		User Provided Information: </b><br>
+							You provide certain Personally Identifiable Information, such as your mobile phone number, names, email addresses, push notification 
+							name (if applicable), billing information (if applicable) and mobile device information to Workchop when choosing to participate in 
+							various uses of the Workchop Service, such as registering as a user, updating your review or requesting reviews of your contacts. In 
+							order to provide the Workchop Service, Workchop will periodically access your address book or contact list on your mobile phone to 
+							locate the mobile phone numbers of other Workchop users (“in-network” numbers), or otherwise categorize other mobile phone numbers 
+							as “out-network” numbers, which are stored as one-way irreversibly hashed values.
+							
+			<br><br><b>		Cookies Information: </b><br>
+							When you visit the Workchop Site, we may send one or more cookies - a small text file containing a string of alphanumeric characters - 
+							to your computer that uniquely identifies your browser. Workchop uses both session cookies and persistent cookies. A persistent cookie 
+							remains after you close your browser. Persistent cookies may be used by your browser on subsequent visits to the site. Persistent cookies 
+							can be removed by following your web browser help file directions. A session cookie is temporary and disappears after you close your 
+							browser. You can reset your web browser to refuse all cookies or to indicate when a cookie is being sent. However, the Workchop Site 
+							may not function properly if the ability to accept cookies is disabled.
+							
+			<br><br><b>		Log File Information: </b><br>
+							When you use the Workchop Site, our servers automatically record certain information that your web browser 
+							sends whenever you visit any website. These server logs may include information such as your web request, Internet Protocol ("IP") 
+							address, browser type, browser language, referring / exit pages and URLs, platform type, number of clicks, domain names, landing 
+							pages, pages viewed and the order of those pages, the amount of time spent on particular pages, the date and time of your request, 
+							one or more cookies that may uniquely identify your browser, your phone number, phone number you are requesting the review of and 
+							various review information. When you use the Workchop Service, our servers log certain general information that our application 
+							sends whenever a message is sent or received, or if you update or request any status information, including time and date stamps 
+							and the mobile phone numbers the messages were sent from and to.
+							
+			<br><br><b>		The Way Workchop Uses Information</b><br>
+							If you submit Personally Identifiable Information to us through the Workchop Site, or Workchop Service, then we use your personal 
+							information to operate, maintain, and provide to you the features and functionality of the Workchop Site and Workchop Service. In 
+							particular, your mobile phone number is essential to your use of the Workchop Service and will be retained. Any Personally 
+							Identifiable Information or status content that you voluntarily disclose on the Workchop Service becomes publicly available and 
+							may be collected and used by other users of the Workchop Service (unless such user is blocked by you). Your name (as it is saved 
+							in other user's mobile phone address book or contact list) may be displayed to other users when you update your status messages 
+							through the Workchop Service and other users may contact you through the Workchop Service. We do not use your mobile phone number 
+							or other Personally Identifiable Information to send commercial or marketing messages without your consent or except as part of a 
+							specific program or feature for which you will have the ability to opt-in or opt-out. We may, however, use your mobile phone 
+							number (or email address, if provided) without further consent for non-marketing or administrative purposes (such as notifying you 
+							of major Workchop Site or Workchop Service changes or for customer service purposes). We may use both your Personally Identifiable 
+							Information and certain non-personally-identifiable information (such as anonymous user usage data, cookies, IP addresses, browser 
+							type, clickstream data, etc.) to improve the quality and design of the Workchop Site and Workchop Service and to create new 
+							features, promotions, functionality, and services by storing, tracking, and analyzing user preferences and trends. Hopefully we 
+							improve the Workchop Site and Service and don't make it suck worse. We may use cookies and log file information to: (a) remember 
+							information so that you will not have to re-enter it during your visit or the next time you use the Workchop Service or Workchop 
+							Site; (b) provide custom, personalized content and information; (c) monitor individual and aggregate metrics such as total number 
+							of visitors, pages viewed, etc.; and (d) track your entries, submissions, views and such.
+							
+			<br><br><b>		When Workchop Discloses Information</b><br>
+							Other users of the Workchop Service may see your Reviews Submissions in a way that is consistent with the use of the Workchop 
+							Service. In other words: If another user has your mobile phone number stored in their mobile phone address book or contact list, 
+							they will be able see your reviews unless you have chosen to block such user.
+							We do not sell or share your Personally Identifiable Information (such as mobile phone number) with other third-party companies 
+							for their commercial or marketing use without your consent or except as part of a specific program or feature for which you will 
+							have the ability to opt-in or opt-out. We may share your Personally Identifiable Information with third party service providers to 
+							the extent that it is reasonably necessary to perform, improve or maintain the Workchop Service. We may share 
+							non-personally-identifiable information (such as anonymous User usage data, referring / exit pages and URLs, platform types, 
+							asset views, number of clicks, etc.) with interested third-parties to assist them in understanding the usage patterns for certain 
+							content, services, advertisements, promotions, and/or functionality on the Workchop Site. We may collect and release Personally 
+							Identifiable Information and/or non-personally-identifiable information if required to do so by law, or in the good-faith belief 
+							that such action is necessary to comply with state and federal laws (such as Nigeria. Copyright Law), international law or respond 
+							to a court order, subpoena, or search warrant or equivalent, or where in our reasonable belief, an individual’s physical safety may 
+							be at risk or threatened. Workchop also reserves the right to disclose Personally Identifiable Information and/or 
+							non-personally-identifiable information that Workchop believes, in good faith, is appropriate or necessary to enforce our Terms of 
+							Service, take precautions against liability, to investigate and defend itself against any third-party claims or allegations, 
+							to assist government enforcement agencies, to protect the security or integrity of the Workchop Site or our servers, and to 
+							protect the rights, property, or personal safety of Workchop, our users or others.
+							
+			<br><br><b>		Your Choices</b><br>
+							You may, of course, decline to submit Personally Identifiable Information through the Workchop Site or the Workchop Service, in 
+							which case Workchop may not be able to provide certain services to you. If you do not agree with our Privacy Policy or Terms of 
+							Service, please delete your account, uninstall the Workchop mobile application and discontinue use of the Workchop Service; your 
+							continued usage of the Workchop Service will signify your assent to and acceptance of our Privacy Policy and Terms of Service. To 
+							protect your privacy and security, we take reasonable steps (such as SMS authentication in certain cases) to verify your identity 
+							before registering your mobile phone number and granting you access to the Workchop Service. Please contact Workchop via email to 
+							support at Workchop.com or available web forms with any questions or comments about this Privacy Policy, your personal information, 
+							your consent, or your opt-in or opt-out choices.
+							
+			<br><br><b>		Our Commitment To Data Security</b><br>
+							Workchop uses commercially reasonable physical, managerial, and technical safeguards to preserve the integrity and security of your 
+							personal information. We cannot, however, ensure or warrant the security of any information you transmit to Workchop and you do so 
+							at your own risk. Using unsecured wifi or other unprotected networks to submit messages through the Workchop Service is never 
+							recommended. Once we receive your transmission of information, Workchop makes commercially reasonable efforts to ensure the 
+							security of our systems. However, please note that this is not a guarantee that such information may not be accessed, disclosed, 
+							altered, or destroyed by breach of any of our physical, technical, or managerial safeguards. If Workchop learns of a security 
+							systems breach, then we may attempt to notify you electronically so that you can take appropriate protective steps. Workchop may 
+							post a notice on the Workchop Site or through the Workchop Service if a security breach occurs.
+							
+			<br><br><b>		Our Commitment To Childrens' Privacy</b><br>
+							Protecting the privacy of young children is especially important. For that reason, Workchop does not knowingly collect or maintain 
+							Personally Identifiable Information or non-personally-identifiable information on the Workchop Site or Workchop Service from persons 
+							under 16 years of age, and no part of the Workchop Service is directed to or intended to be used by persons under 16. If you are 
+							under 16 years of age, then please do not use the Workchop Service or access the Workchop Site at any time or in any manner. If 
+							Workchop learns that Personally Identifiable Information of persons under 16 years of age has been collected on the Workchop Site 
+							or Workchop Service, then Workchop may deactivate the account and/or make the status submissions inaccessible. And always, think of 
+							the children!
+							
+			<br><br><b>		In the Event of Merger, Sale, or Bankruptcy</b><br>
+							In the event that Workchop is acquired by or merged with a third party entity, we reserve the right to transfer or assign the 
+							information we have collected from our users as part of such merger, acquisition, sale, or other change of control. In the 
+							(hopefully) unlikely event of our bankruptcy, insolvency, reorganization, receivership, or assignment for the benefit of creditors, 
+							or the application of laws or equitable principles affecting creditors' rights generally, we may not be able to control how your 
+							personal information is treated, transferred, or used.
+							
+			<br><br><b>		Changes and updates to this Privacy Notice</b><br>
+							This Privacy Policy may be revised periodically and this will be reflected by the "effective date" below. Please revisit this page 
+							to stay aware of any changes. Your continued use of the Workchop Site and Workchop Service constitutes your agreement to this 
+							Privacy Policy and any amendments.
+
+
+				<br><br><b>	Date Last Modified:</b><br>
+							This Privacy Notice was last modified August 23rd, 2016
+
+					</font>
+				</div>
 			</div>
 		</div><br><br>
 	</body>
