@@ -238,8 +238,8 @@
 
 					</font>
 				</div>
-				<br>
-				<p class="medium-font">Privacy Notice</p>
+				
+				<p class="medium-font" style="text-align:left;margin-left:3%;">Privacy Notice</p>
 				<div class="terms-div">
 					<font class="small-font">
 					
@@ -380,8 +380,8 @@
 							Privacy Policy and any amendments.
 
 
-				<br><br><b>	Date Last Modified:</b><br>
-							This Privacy Notice was last modified August 23rd, 2016
+			<br><br><br><br>Date Last Modified:<br>
+							This Privacy Notice was last modified September 24th, 2016
 
 					</font>
 				</div>
