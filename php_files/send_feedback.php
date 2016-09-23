@@ -45,7 +45,7 @@
 				
 		$db = new PDO($database, $user, $pwd);
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$query2 = $db->prepare("select vendor_name, mobile_number, email_address from permanent_vendors where user_id=:id");
+		$query2 = $db->prepare("select vendor_name, mobile_number, email_address from permanent_vendors where vendor_id=:id");
 		$query2->bindParam(':id',$id);
 		$query2->execute();
 		$result2 = $query2->fetchAll();
@@ -66,7 +66,7 @@
 		$subject2 = "Feedback From Vendor - ".$fullName;
 		$txt2 = "New feedback from user with details below,\r\n\r\n" . "Full Name - ".$fullName."\r\nEmail Address - ". $email."\r\nPhone Number - ".$number."\r\nFeedback Subject - "
 		.$feedbackSubject. "\r\nFeedback Body - ".$feedbackBody;
-		$headers2 = "From: Workchop User" . "\r\n";
+		$headers2 = "From: Workchop Vendor" . "\r\n";
 		mail($to2,$subject2,$txt2,$headers2);
 		
 		echo "done";	
