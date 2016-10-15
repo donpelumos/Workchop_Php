@@ -15,8 +15,15 @@
 		$resultSet = 0;
 		
 		foreach($result2 as $value){
-			if(strcmp($value[4],strip_tags(trim($_GET['vendor_number']))) == 0 || strcmp(explode("&&",$value[4])[0],strip_tags(trim($_GET['vendor_number']))) == 0
-				|| strcmp(explode("&&",$value[4])[1], strip_tags(trim($_GET['vendor_number'])))== 0){
+			if(strcmp($value[4],strip_tags(trim($_GET['vendor_number']))) == 0 
+				|| strcmp(explode("&&",$value[4])[0],strip_tags(trim($_GET['vendor_number']))) == 0
+				|| strcmp(explode("&&",$value[4])[1],strip_tags(trim($_GET['vendor_number']))) == 0
+				|| strcmp($value[4],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
+				|| strcmp($value[4],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 
+				|| strcmp(explode("&&",$value[4])[0],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
+				|| strcmp(explode("&&",$value[4])[0],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 
+				|| strcmp(explode("&&",$value[4])[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
+				|| strcmp(explode("&&",$value[4])[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 ){
 				$joinedUser = $value[0] . "==" . strip_tags(trim($_GET['user_id']));
 				print_r($joinedUser);
 				echo "<br>";
