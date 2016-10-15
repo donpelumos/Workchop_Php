@@ -54,6 +54,7 @@
 			$vendor_id = md5(time().strip_tags(trim($_GET['user_id'])).strip_tags(trim($_GET['vendor_name'])));		
 			$vendor_name = strip_tags(trim($_GET['vendor_name'])); 
 			$vendor_number = strip_tags(trim($_GET['vendor_number'])); 
+			$vendor_number = str_replace("----","&&",$vendor_number);
 			$vendor_type = strip_tags(trim($_GET['vendor_type'])); 
 			$is_vendor_smart = strip_tags(trim($_GET['is_vendor_smart'])); 
 			$vendor_location_category = strip_tags(trim($_GET['vendor_location_category']));
@@ -90,6 +91,7 @@
 			$vendor_id = md5(time().strip_tags(trim($_GET['user_id'])).strip_tags(trim($_GET['vendor_name'])));		
 			$vendor_name = strip_tags(trim($_GET['vendor_name'])); 
 			$vendor_number = strip_tags(trim($_GET['vendor_number'])); 
+			$vendor_number = str_replace("----","&&",$vendor_number);
 			$vendor_type = strip_tags(trim($_GET['vendor_type'])); 
 			$is_vendor_smart = strip_tags(trim($_GET['is_vendor_smart'])); 
 			$vendor_location_category = strip_tags(trim($_GET['vendor_location_category']));
