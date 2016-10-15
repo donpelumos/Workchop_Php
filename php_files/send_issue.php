@@ -25,7 +25,7 @@
 		
 		if(strlen($email) >8){
 			$to = "$email";
-			$subject = "issue Received";
+			$subject = "Issue Received";
 			$txt = "Hello,\r\n\r\n" . "Your issue or complaint has been received and would be resolved as soon as possible. Sorry for any inconviniences." . "\r\n\r\nBest Regards.\r\n\r\nWorkchop Team.";
 			$headers = "From: support@workchopapp.com" . "\r\n";
 			mail($to,$subject,$txt,$headers);
