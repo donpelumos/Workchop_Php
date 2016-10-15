@@ -1,4 +1,5 @@
 <?php
+	date_default_timezone_set('Africa/Lagos');
 	$database = 'mysql:dbname=workchop_main;host=localhost;';
 	$user = 'workchop_admin';
 	$pwd = 'workchop_12345';

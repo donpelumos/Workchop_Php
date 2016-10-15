@@ -12,7 +12,7 @@
 		
 		$userId = strip_tags(trim($_GET['id']));
 		$query = $db->prepare("SELECT vendor_name,  vendor_location_category, vendor_id,
-		group_concat(vendor_number SEPARATOR '&&') FROM user_vendors where user_id like '%$userId%' and vendor_type=:vendor_type GROUP BY vendor_name; asc");
+		group_concat(vendor_number SEPARATOR '&&') FROM user_vendors where user_id like '%$userId%' and vendor_type=:vendor_type GROUP BY vendor_name");
 		
 		$query->bindParam(':vendor_type',$vendor_type);
 		
