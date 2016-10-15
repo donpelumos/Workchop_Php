@@ -15,7 +15,7 @@
 		$resultSet = 0;
 		
 		foreach($result2 as $value){
-			if((strpos($_GET['vendor_number'],"----")>0){){				
+			if((strpos($_GET['vendor_number'],"----")>0)){				
 				if(strcmp($value[4],strip_tags(trim($_GET['vendor_number']))) == 0 
 					|| strcmp(explode("&&",$value[4])[0],strip_tags(trim($_GET['vendor_number']))) == 0
 					|| strcmp(explode("&&",$value[4])[1],strip_tags(trim($_GET['vendor_number']))) == 0
@@ -100,7 +100,7 @@
 		$result2 = $query2->fetchAll();
 		$exists = 0;
 		foreach($result2 as $value){
-			if((strpos($_GET['vendor_number'],"----")>0){){				
+			if((strpos($_GET['vendor_number'],"----")>0)){				
 				if(strcmp($value[1],strip_tags(trim($_GET['vendor_number']))) == 0 
 					|| strcmp(explode("&&",$value[1])[0],strip_tags(trim($_GET['vendor_number']))) == 0
 					|| strcmp(explode("&&",$value[1])[1],strip_tags(trim($_GET['vendor_number']))) == 0
