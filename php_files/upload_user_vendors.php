@@ -15,30 +15,54 @@
 		$resultSet = 0;
 		
 		foreach($result2 as $value){
-			if(strcmp($value[4],strip_tags(trim($_GET['vendor_number']))) == 0 
-				|| strcmp(explode("&&",$value[4])[0],strip_tags(trim($_GET['vendor_number']))) == 0
-				|| strcmp(explode("&&",$value[4])[1],strip_tags(trim($_GET['vendor_number']))) == 0
-				|| strcmp($value[4],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
-				|| strcmp($value[4],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 
-				|| strcmp(explode("&&",$value[4])[0],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
-				|| strcmp(explode("&&",$value[4])[0],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 
-				|| strcmp(explode("&&",$value[4])[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
-				|| strcmp(explode("&&",$value[4])[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 ){
-				$joinedUser = $value[0] . "==" . strip_tags(trim($_GET['user_id']));
-				print_r($joinedUser);
-				echo "<br>";
-				$initial = explode("==",$joinedUser);
-				print_r($initial);
-				echo "<br>";
-				$final = array_unique($initial);
-				print_r($final);
-				echo "<br>";
-				$finalJoinedUser = implode("==",$final);
-				print_r($finalJoinedUser);
-				echo "<br>";
-				$newQuery = $db->prepare("update user_vendors set user_id='$finalJoinedUser' where vendor_number='$value[4]'");
-				$newQuery->execute();
-				$resultSet = 1;
+			if((strpos($_GET['vendor_number'],"----")>0){){				
+				if(strcmp($value[4],strip_tags(trim($_GET['vendor_number']))) == 0 
+					|| strcmp(explode("&&",$value[4])[0],strip_tags(trim($_GET['vendor_number']))) == 0
+					|| strcmp(explode("&&",$value[4])[1],strip_tags(trim($_GET['vendor_number']))) == 0
+					|| strcmp($value[4],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
+					|| strcmp($value[4],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 
+					|| strcmp(explode("&&",$value[4])[0],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
+					|| strcmp(explode("&&",$value[4])[0],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 
+					|| strcmp(explode("&&",$value[4])[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
+					|| strcmp(explode("&&",$value[4])[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 ){
+					$joinedUser = $value[0] . "==" . strip_tags(trim($_GET['user_id']));
+					print_r($joinedUser);
+					echo "<br>";
+					$initial = explode("==",$joinedUser);
+					print_r($initial);
+					echo "<br>";
+					$final = array_unique($initial);
+					print_r($final);
+					echo "<br>";
+					$finalJoinedUser = implode("==",$final);
+					print_r($finalJoinedUser);
+					echo "<br>";
+					$newQuery = $db->prepare("update user_vendors set user_id='$finalJoinedUser' where vendor_number='$value[4]'");
+					$newQuery->execute();
+					$resultSet = 1;
+				}
+			}
+			else{
+				if(strcmp($value[4],strip_tags(trim($_GET['vendor_number']))) == 0 
+					|| strcmp(explode("&&",$value[4])[0],strip_tags(trim($_GET['vendor_number']))) == 0
+					|| strcmp(explode("&&",$value[4])[1],strip_tags(trim($_GET['vendor_number']))) == 0
+					){
+					$joinedUser = $value[0] . "==" . strip_tags(trim($_GET['user_id']));
+					print_r($joinedUser);
+					echo "<br>";
+					$initial = explode("==",$joinedUser);
+					print_r($initial);
+					echo "<br>";
+					$final = array_unique($initial);
+					print_r($final);
+					echo "<br>";
+					$finalJoinedUser = implode("==",$final);
+					print_r($finalJoinedUser);
+					echo "<br>";
+					$newQuery = $db->prepare("update user_vendors set user_id='$finalJoinedUser' where vendor_number='$value[4]'");
+					$newQuery->execute();
+					$resultSet = 1;
+				}
 			}
 		}
 		
@@ -76,16 +100,26 @@
 		$result2 = $query2->fetchAll();
 		$exists = 0;
 		foreach($result2 as $value){
-			if(strcmp($value[1],strip_tags(trim($_GET['vendor_number']))) == 0 
-				|| strcmp(explode("&&",$value[1])[0],strip_tags(trim($_GET['vendor_number']))) == 0
-				|| strcmp(explode("&&",$value[1])[1],strip_tags(trim($_GET['vendor_number']))) == 0
-				|| strcmp($value[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
-				|| strcmp($value[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 
-				|| strcmp(explode("&&",$value[1])[0],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
-				|| strcmp(explode("&&",$value[1])[0],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 
-				|| strcmp(explode("&&",$value[1])[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
-				|| strcmp(explode("&&",$value[1])[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 ){
-				$exists = 1;
+			if((strpos($_GET['vendor_number'],"----")>0){){				
+				if(strcmp($value[1],strip_tags(trim($_GET['vendor_number']))) == 0 
+					|| strcmp(explode("&&",$value[1])[0],strip_tags(trim($_GET['vendor_number']))) == 0
+					|| strcmp(explode("&&",$value[1])[1],strip_tags(trim($_GET['vendor_number']))) == 0
+					|| strcmp($value[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
+					|| strcmp($value[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 
+					|| strcmp(explode("&&",$value[1])[0],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
+					|| strcmp(explode("&&",$value[1])[0],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 
+					|| strcmp(explode("&&",$value[1])[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
+					|| strcmp(explode("&&",$value[1])[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 ){
+					$exists = 1;
+				}
+			}
+			else{
+				if(strcmp($value[1],strip_tags(trim($_GET['vendor_number']))) == 0 
+					|| strcmp(explode("&&",$value[1])[0],strip_tags(trim($_GET['vendor_number']))) == 0
+					|| strcmp(explode("&&",$value[1])[1],strip_tags(trim($_GET['vendor_number']))) == 0
+					){
+					$exists = 1;
+				}
 			}
 		}
 		
