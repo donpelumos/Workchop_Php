@@ -76,8 +76,15 @@
 		$result2 = $query2->fetchAll();
 		$exists = 0;
 		foreach($result2 as $value){
-			if(strcmp($value[1],strip_tags(trim($_GET['vendor_number']))) == 0 || strcmp(explode("&&",$value[1])[0],strip_tags(trim($_GET['vendor_number']))) == 0 
-				|| strcmp(explode("&&",$value[1])[1],strip_tags(trim($_GET['vendor_number']))) == 0 ){
+			if(strcmp($value[1],strip_tags(trim($_GET['vendor_number']))) == 0 
+				|| strcmp(explode("&&",$value[1])[0],strip_tags(trim($_GET['vendor_number']))) == 0
+				|| strcmp(explode("&&",$value[1])[1],strip_tags(trim($_GET['vendor_number']))) == 0
+				|| strcmp($value[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
+				|| strcmp($value[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 
+				|| strcmp(explode("&&",$value[1])[0],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
+				|| strcmp(explode("&&",$value[1])[0],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 
+				|| strcmp(explode("&&",$value[1])[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[0]) == 0 
+				|| strcmp(explode("&&",$value[1])[1],explode("----",strip_tags(trim($_GET['vendor_number'])))[1]) == 0 ){
 				$exists = 1;
 			}
 		}
