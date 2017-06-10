@@ -19,7 +19,7 @@
 			$query->execute();
 			$result = $query->fetchAll();
 			foreach($result as $key){
-				echo $key[0] . "--" . $key[1] . "--" . $value[3] . "--" . $value[4] . "--" . $key[2] . "------";
+				echo $key[0] . "--" . $key[1] . "--" . $value[3] . "--" . $value[4] . "--" . $key[2] . "--" . $value[5] . "------";
 			}
 		}		
 	} 

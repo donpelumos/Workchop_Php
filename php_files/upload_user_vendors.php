@@ -1,4 +1,5 @@
 <?php
+	include ('Confirmer.php');
 	$database = 'mysql:dbname=workchop_main;host=localhost;';
 	$user = 'workchop_admin';
 	$pwd = 'workchop_12345';
@@ -37,7 +38,20 @@
 					$finalJoinedUser = implode("==",$final);
 					print_r($finalJoinedUser);
 					echo "<br>";
-					$newQuery = $db->prepare("update user_vendors set user_id='$finalJoinedUser' where vendor_number='$value[4]'");
+					$confirmer = new Confirmer();
+					$n1 = strip_tags(trim($_GET['vendor_name'])); 
+					$n2 = $value[3];
+					$r1 = $confirmer->returnRank($n1);
+					$r2 = $confirmer->returnRank($n2);
+					if($r1 > $r2){
+						$returnName = $confirmer->adjustName($n1, $r1);
+					}
+					else{
+						$returnName = $confirmer->adjustName($n2, $r2);
+					}
+					$newQuery = $db->prepare("update user_vendors set vendor_name='$returnName', user_id='$finalJoinedUser' where vendor_number='$value[4]'");
+					$newQuery->execute();
+					$newQuery = $db->prepare("update permanent_vendors set vendor_name='$returnName' where mobile_number='$value[4]'");
 					$newQuery->execute();
 					$resultSet = 1;
 				}
@@ -59,7 +73,20 @@
 					$finalJoinedUser = implode("==",$final);
 					print_r($finalJoinedUser);
 					echo "<br>";
-					$newQuery = $db->prepare("update user_vendors set user_id='$finalJoinedUser' where vendor_number='$value[4]'");
+					$confirmer = new Confirmer();
+					$n1 = strip_tags(trim($_GET['vendor_name'])); 
+					$n2 = $value[3];
+					$r1 = $confirmer->returnRank($n1);
+					$r2 = $confirmer->returnRank($n2);
+					if($r1 > $r2){
+						$returnName = $confirmer->adjustName($n1, $r1);
+					}
+					else{
+						$returnName = $confirmer->adjustName($n2, $r2);
+					}
+					$newQuery = $db->prepare("update user_vendors set vendor_name='$returnName', user_id='$finalJoinedUser' where vendor_number='$value[4]'");
+					$newQuery->execute();
+					$newQuery = $db->prepare("update permanent_vendors set vendor_name='$returnName' where mobile_number='$value[4]'");
 					$newQuery->execute();
 					$resultSet = 1;
 				}
@@ -82,8 +109,11 @@
 			
 			$user_id = strip_tags(trim($_GET['user_id'])); 
 			$unique_id = md5(time().strip_tags(trim($_GET['user_id'])).strip_tags(trim($_GET['vendor_name'])).strip_tags(trim($_GET['vendor_number'])));
-			$vendor_id = md5(time().strip_tags(trim($_GET['user_id'])).strip_tags(trim($_GET['vendor_name'])));		
-			$vendor_name = strip_tags(trim($_GET['vendor_name'])); 
+			$vendor_id = md5(time().strip_tags(trim($_GET['user_id'])).strip_tags(trim($_GET['vendor_name'])));	
+			$confirmer = new Confirmer();
+			$n1 = strip_tags(trim($_GET['vendor_name'])); 
+			$r1 = $confirmer->returnRank($n1);		
+			$vendor_name = $confirmer->adjustName($n1, $r1);
 			$vendor_number = strip_tags(trim($_GET['vendor_number'])); 
 			$vendor_number = str_replace("----","&&",$vendor_number);
 			$vendor_type = strip_tags(trim($_GET['vendor_type'])); 
@@ -137,7 +167,10 @@
 			$user_id = strip_tags(trim($_GET['user_id'])); 
 			$unique_id = md5(time().strip_tags(trim($_GET['user_id'])).strip_tags(trim($_GET['vendor_name'])).strip_tags(trim($_GET['vendor_number'])));
 			$vendor_id = md5(time().strip_tags(trim($_GET['user_id'])).strip_tags(trim($_GET['vendor_name'])));		
-			$vendor_name = strip_tags(trim($_GET['vendor_name'])); 
+			$confirmer = new Confirmer();
+			$n1 = strip_tags(trim($_GET['vendor_name'])); 
+			$r1 = $confirmer->returnRank($n1);		
+			$vendor_name = $confirmer->adjustName($n1, $r1);
 			$vendor_number = strip_tags(trim($_GET['vendor_number'])); 
 			$vendor_number = str_replace("----","&&",$vendor_number);
 			$vendor_type = strip_tags(trim($_GET['vendor_type'])); 

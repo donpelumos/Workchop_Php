@@ -9,7 +9,7 @@
 		$db = new PDO($database, $user, $pwd);
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		
-		$query = $db->prepare("select * from permanent_users where email_address=:email and password=:password");
+		$query = $db->prepare("select * from permanent_users where email_address=:email and password=:password order by date_time desc limit 1");
 		$query->bindParam(':email',$email);
 		$query->bindParam(':password',$password);
 		
@@ -19,7 +19,7 @@
 		$result = $query->fetchAll();
 		
 		if($query->rowCount() == 0){
-			$query2= $db->prepare("select * from permanent_users where mobile_number=:email and password=:password");
+			$query2= $db->prepare("select * from permanent_users where mobile_number=:email and password=:password order by date_time desc limit 1");
 			$query2->bindParam(':email',$email);
 			$query2->bindParam(':password',$password);
 			
